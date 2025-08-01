@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <h2 style="color: pink">New Contact Form Submission</h2>
+    <table style="border-collapse: collapse; width: 100%">
+      {% if data.name %}
+      <p style="color: blue"><strong>Name:</strong> {{ data.name }}</p>
+      {% endif %} {% if data.phone %}
+      <p><strong>Phone Number:</strong> {{ data.phone }}</p>
+      {% endif %} {% if data.email %}
+      <p><strong>Email:</strong> {{ data.email }}</p>
+      {% endif %} {% if data.message %}
+      <p><strong>Message:</strong> {{ data.message }}</p>
+      {% endif %}
+    </table>
+  </body>
+</html>
